@@ -1,0 +1,736 @@
+/* Importerar en normaliseringsmall */
+@import url(normalize.css);
+
+/* Reglerar alla boxar till border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Bakgrundsfärg och teckensnitt */
+body {
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Logotyp */
+#logo img {
+    padding-top: 5px;
+    width: 200px;
+}
+
+/* Sidhuvud */
+header {
+    height: 52px;
+    width: 100%;
+    background-color: #1b1b1b;
+    box-shadow: 0 2px 4px 0 #00000049;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Navigerinsmeny */
+nav {
+    background-color: #1b1b1b;
+    box-shadow: 0 2px 4px 0 #00000049;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    height: 160px;
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    width: fit-content;
+    padding: 10px 10px;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li:hover {
+    background-color: #464646;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Menyknapp */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #1b1b1b;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #464646;
+    border-radius: 5px;
+}
+
+/* Hamburgerikon */
+.bars {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #f1f1f1;
+    margin: 8px 0;
+    border-radius: 40%;
+}
+
+.menu-icon {
+    padding: 0 2px;
+}
+
+/* Videobakgrund fyller hela fönsterbredden */
+#background-video {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px 0 #00000049;
+}
+
+/* Regler för rubriker */
+h1,
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0 30px;
+    margin-bottom: 5px;
+    color: #1b1b1b;
+}
+
+h1 {
+    padding-top: 75px;
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Regler för brödtext */
+p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 30px;
+    margin: 0;
+    line-height: 22px;
+    color: #1b1b1b;
+}
+
+/* Regler för ingress på startsidan */
+#first-p {
+    margin-top: 20px;
+}
+
+/* Senaste kreationerna */
+.latest-creations {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    transition: 0.3s;
+}
+
+.latest-creations:hover {
+    transform: scale(1.03);
+}
+
+/* Kreationer */
+.creations {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    transition: 0.3s;
+}
+
+.creations:hover {
+    transform: scale(1.03);
+}
+
+/* Bildtext för kreationer */
+figcaption {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 8px 20px;
+    box-shadow: 0 2px 4px 0 #00000049;
+}
+
+/* Färg på länkar */
+a {
+    color: #1b1b1b;
+}
+
+/* Barkgrundsfärg på knappar */
+#pink {
+    background-color: #fac9e1;
+    transition: 0.3s;
+}
+
+#pink:hover {
+    background-color: #f89ac7;
+}
+
+#turquoise {
+    background-color: #aaeafa;
+    transition: 0.3s;
+}
+
+#turquoise:hover {
+    background-color: #72def9;
+}
+
+#yellow {
+    background-color: #e3d6ae;
+    transition: 0.3s;
+}
+
+#yellow:hover {
+    background-color: #dfc167;
+}
+
+#green {
+    background-color: #cbd996;
+    transition: 0.3s;
+}
+
+#green:hover {
+    background-color: #a9c444;
+}
+
+#grey {
+    background-color: rgb(195, 195, 195);
+    transition: 0.3s;
+}
+
+#grey:hover {
+    background-color: rgb(161, 161, 161);
+}
+
+#orange {
+    background-color: rgb(255, 173, 136);
+    transition: 0.3s;
+}
+
+#orange:hover {
+    background-color: rgb(253, 139, 85);
+}
+
+#purple {
+    background-color: #e3bcff;
+    transition: 0.3s;
+}
+
+#purple:hover {
+    background-color: #d59bff;
+}
+
+#lightgrey {
+    background-color: rgb(195, 195, 195);
+    transition: 0.3s;
+}
+
+#lightgrey:hover {
+    background-color: rgb(161, 161, 161);
+}
+
+/* Grid-container för kreationer */
+.grid-container-creations a {
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* Justerar padding för första p för sidorna med specifika kreationer */
+#specific-creation-first-p {
+    padding-top: 40px;
+}
+
+#text-right-briefs,
+#text-right-set {
+    padding-top: 0;
+}
+
+/* Bildbredd på specifika kreationer */
+.single-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Gör videofönstret responsivt genom att lägga till procentvärde så att bildförhållandet bibehålls (16:9) */
+.hatvideo {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+/* Positionerar iframe i hatvideobehållaren */
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 2px 7px #464646, 0 1px 3px #1b1b1b;
+}
+
+/* Lägger till padding m.m. runt videon */
+#videopadding {
+    padding: 0 30px;
+    margin-top: 40px;
+}
+
+/* Orm-bilden */
+#snake {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Om webbutvecklaren */
+#about-petra {
+    background-color: #ff5d35bf;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 30px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px 0 #00000049;
+}
+
+#about-petra h2 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#about-petra ul {
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0 30px;
+    color: #1b1b1b;
+    line-height: 45px;
+    margin-top: 0;
+}
+
+#about-petra li {
+    position: relative;
+    left: 10px;
+}
+
+/* Ikoner */
+.icons {
+    height: 22px;
+    position: relative;
+    bottom: -7px;
+    left: -10px;
+}
+
+/* Positionerar allt innehåll för att footern ska stanna längst ner */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Lägger till padding för att innehållet inte ska hamna bakom footern */
+#content-wrap {
+    padding-bottom: 100px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: #1b1b1b;
+    color: #f1f1f1;
+    padding: 2px;
+    margin-top: 60px;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* BILDVISNING för specifik kreation */
+
+/* Regler för bildcontainern */
+.container {
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+/* Döljer bilderna som standard (aktuell bild visas med hjälp av JavaScript) */
+.mySlides {
+    display: none;
+}
+
+/* Bildbredd */
+.mySlides img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Lägger till en pekare vid hover över bildminiatyrerna */
+.cursor {
+    cursor: pointer;
+}
+
+/* Fyra kolumner bredvid varandra */
+.column {
+    float: left;
+    width: 25%;
+    margin-top: 20px;
+}
+
+/* Minskar ner bildminiatyrerna och skapar mellanrum */
+.column img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+}
+
+/* Reglerar opaciteten på bildminiatyrerna */
+.demo {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Skärmar med en bredd på 601-1023px */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+
+    /* Sidhuvud */
+    header {
+        height: 66px;
+    }
+
+    /* Logotyp */
+    #logo img {
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 250px;
+    }
+
+    /* Storlek på navigeringsfält- och länkar */
+    nav {
+        height: 175px;
+        top: 66px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        padding: 4px 10px;
+    }
+
+    /* Regler för rubriker */
+    h1,
+    h2 {
+        font-size: 32px;
+        padding: 5px 50px;
+    }
+
+    h1 {
+        padding-top: 100px;
+        margin-top: 0;
+    }
+
+    /* Regler för brödtext */
+    p {
+        font-size: 20px;
+        padding: 10px 50px;
+        line-height: 28px;
+    }
+
+    /* Regler för ingress på startsidan */
+    #first-p {
+        margin-top: 30px;
+    }
+
+    /* Senaste kreationerna */
+    .latest-creations {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    /* CSS Grids för Kreationersidan */
+    .grid-container-creations {
+        max-width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* Lägger till padding runt videon */
+    #videopadding {
+        padding: 0 50px;
+    }
+
+    /* Orm-bilden */
+    #snake {
+        max-width: 500px;
+    }
+
+    /* Kontaktuppgifter till mig */
+    #about-petra {
+        padding: 30px 0;
+        margin: 0 50px;
+        margin-top: 50px;
+    }
+
+    #about-petra h2 {
+        font-size: 24px;
+    }
+
+    #about-petra ul {
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    #about-petra li {
+        left: 35px;
+    }
+
+    /* Ikoner */
+    .icons {
+        height: 30px;
+        position: relative;
+        bottom: -10px;
+        left: -15px;
+    }
+}
+
+
+/* Skärmar med minsta bredd 1024px */
+@media only screen and (min-width: 1024px) {
+
+    /* Sidhuvud */
+    header {
+        height: 66px;
+    }
+
+    /* Logotyp */
+    #logo img {
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 250px;
+    }
+
+    /* Navigeringsmenyn förändras */
+    .menu-btn {
+        display: none !important;
+    }
+
+    nav {
+        display: block !important;
+        position: static;
+        height: auto;
+        width: auto;
+        box-shadow: none;
+    }
+
+    nav li {
+        display: inline;
+        padding-top: 15px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+
+    /* Videobakgrunden fyller hela fönstret och placeras bakom annat innehåll */
+    #background-video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -2;
+    }
+
+    /* Huvudinnehållet placeras ovanpå videobakgrunden */
+    #presentation {
+        position: absolute;
+        top: 120px;
+        left: 55px;
+        background: #ff5d35bf;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 #00000049;
+        height: fit-content;
+        width: 412px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        z-index: -1;
+    }
+
+    /* Regler för rubriker */
+    h1,
+    h2 {
+        font-size: 36px;
+        padding: 5px 70px;
+    }
+
+    h1 {
+        padding-top: 120px;
+        margin-top: 0;
+    }
+
+    /* Regler för brödtext */
+    p {
+        font-size: 24px;
+        padding: 10px 70px;
+        line-height: 30px;
+    }
+
+    /* Regler för ingress på startsidan */
+    #first-p {
+        margin-top: 10px;
+        padding: 10px 50px;
+    }
+
+    .next-p {
+        padding: 10px 50px;
+    }
+
+    /* CSS Grids för startsidan */
+    .grid-container {
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    /* CSS Grids för kreationersidan */
+    .grid-container-creations {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    /* Regler för huvudinnehåll på flera sidor */
+    .content {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    /* CSS Grids för specifik kreationssida */
+    .grid-container-specific-creation {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    /* Justerar textens placering på specifika kreationssidorna */
+    #specific-creation-first-p {
+        padding-top: 200px;
+    }
+
+    .text-right {
+        padding-left: 20px;
+    }
+
+    /* Regler för bildcontainern */
+    .container {
+        padding: 0;
+        padding-left: 60px;
+    }
+
+    /* Lägger till padding runt videon */
+    #videopadding {
+        padding: 0 70px;
+    }
+
+    /* CSS Grids för sidan om webbplatsen */
+    .grid-container-about {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    /* Ormen */
+    #snake {
+        margin-top: 0;
+        max-width: 300px;
+    }
+
+    /* Kontaktuppgifter till mig */
+    #about-petra {
+        padding: 30px 0;
+        margin: 0 70px;
+        margin-top: 30px;
+    }
+
+    #about-petra h2 {
+        font-size: 28px;
+    }
+
+    #about-petra ul {
+        font-size: 24px;
+        line-height: 70px;
+    }
+
+    #about-petra li {
+        left: 57px;
+    }
+
+    /* Ikoner */
+    .icons {
+        height: 36px;
+        position: relative;
+        bottom: -12px;
+        left: -17px;
+    }
+}

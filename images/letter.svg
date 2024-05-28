@@ -1,0 +1,26 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 37" width="52" height="37">
+	<title>letter</title>
+	<defs>
+		<image  width="52" height="4" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAEAQMAAAD7zI4FAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAAAFklEQVR4nGNggAL7/yBwgKEeTD+A0QDZfxKvY0OM9AAAAABJRU5ErkJggg=="/>
+		<image  width="52" height="4" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAEAQMAAAD7zI4FAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAAAFklEQVR4nGOo/w8CDxhgtD2YPsAABQB0/hKvI4lO+AAAAABJRU5ErkJggg=="/>
+		<image  width="4" height="37" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAlAgMAAAAYb6B+AAAAAXNSR0IB2cksfwAAAAlQTFRFAAAAAAAAAAAAg2PpwAAAAAN0Uk5TAAj/H62hWwAAABNJREFUeJxjYGCQYtCiGHIxMAAAz/AFj9KIAP4AAAAASUVORK5CYII="/>
+		<image  width="4" height="37" id="img4" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAlAgMAAAAYb6B+AAAAAXNSR0IB2cksfwAAAAxQTFRFAAAAAAAAAAAAAAAANek3lgAAAAR0Uk5TAP8CCDHmuMcAAAATSURBVHicY2BgiGAIoRjGMDAAAKp5C4los4x2AAAAAElFTkSuQmCC"/>
+		<image  width="35" height="35" id="img5" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAAAXNSR0IB2cksfwAAAD9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsyWCLwAAABV0Uk5TAJ//oJBgfas8CgIDBA4GAQgQCbDQkF2iLQAAAFdJREFUeJztzVEOgCAMA9AxVHSDbaj3P6vcoHwbmvTvpSWaSkqYMEOUeaGF/o+2GbRDdJTzQohItCLSmige0moCz9wlgPFQcbTU3eI2dPcwZ2T6C8lAox8AdQLM4iix2gAAAABJRU5ErkJggg=="/>
+		<image  width="36" height="35" id="img6" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAMAAADL21gSAAAAAXNSR0IB2cksfwAAADlQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvHZQPQAAABN0Uk5TAJ//oA41koYJBAUDAQIGB7DQEG60UQ8AAABQSURBVHic7c07EoAwDANRReYXBwhw/8PilkopKL1u31jAH5UyYEipwtDSpEnzaZqXVZkN1QWBNyWAPU5VwxzCNPezD8zJNSMv/cfuRyMo8wKgpQILPVkhHQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<use id="Lager 1" href="#img1" x="0" y="0"/>
+	<use id="Lager 1 copy" href="#img2" x="0" y="33"/>
+	<use id="Form 1" href="#img3" x="0" y="0"/>
+	<use id="Form 2" href="#img4" x="48" y="0"/>
+	<use id="Form 3" href="#img5" x="1" y="1"/>
+	<use id="Form 4" href="#img6" x="15" y="1"/>
+	<path id="Form 5" class="s0" d="m4 5.6h1l0.1 28h-1z"/>
+	<path id="Form 5 copy" class="s0" d="m47 5.6h1l0.1 28h-1z"/>
+	<path id="Form 6" class="s0" d="m4.6 33.1v-1h43.1v1z"/>
+	<path id="Form 6 copy" class="s0" d="m4.6 5.1v-1h43.1v1z"/>
+	<path id="Form 7" class="s0" d="m7 5.7l0.7-0.7 18.7 18.8-0.8 0.7z"/>
+	<path id="Form 8" class="s0" d="m44.7 4.7l0.7 0.7-19.3 19.3-0.7-0.7z"/>
+</svg>

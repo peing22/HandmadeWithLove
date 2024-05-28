@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-delat set</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <!-- Länkar in style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Länkar in externt teckensnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Sidhuvud -->
+            <header>
+                <!-- Logotyp -->
+                <a href="index.html" id="logo">
+                    <img src="images/logo.svg" alt="Logotyp" width="400" height="66">
+                </a>
+                <!-- Knapp för att öppna och stänga hamburgermeny -->
+                <button class="menu-btn" id="open-menu" onclick="openOrCloseMenu()">
+                    <span class="menu-icon">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </span>
+                </button>
+                <!-- Navigering -->
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Startsida</a></li>
+                        <li><a href="creations.html">Kreationer</a></li>
+                        <li><a href="about.html">Om webbplatsen</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Huvudinnehåll på sidan -->
+            <main class="content">
+                <!-- Brödsmula tillbaka till sidan Kreationer -->
+                <h1><a href="creations.html">Kreationer</a> / 3-delat set</h1>
+                <div class="grid-container-specific-creation">
+                    <!-- Slideshow med olika filformat-->
+                    <div class="container">
+                        <picture class="single-picture">
+                            <source type="image/avif" srcset="images/set/set500.avif" width="500" height="500">
+                            <source type="image/webp" srcset="images/set/set500.webp" width="500" height="500">
+                            <img src="images/set/set500.jpg" alt="3-delat set med mössa, filt och vantar">
+                        </picture>
+                    </div>
+                    <div id="specific-creation-text">
+                        <p class="text-right" id="specific-creation-first-p" style="clear: left;">Detta 3-delade set
+                            består av en mössa, ett par vantar och en buff som är en sorts halsduk.</p>
+                        <p class="text-right">Jag har ritat egna mönster till dessa kreationer som är sydda till mitt
+                            yngsta barn&shy;barn.</p>
+                        <p class="text-right">Tygerna jag har använt är bomulls&shy;trikå, foder av fleece samt mudd&shy;väv.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- Sidfot -->
+        <footer id="footer">
+            <ul>
+                <li>Copyright &copy; 2023 Petra Ingemarsson</li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Länkar in jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Länkar in main.js -->
+    <script src="main.js"></script>
+</body>
+
+</html>

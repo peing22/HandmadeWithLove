@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mössor</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <!-- Länkar in style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Länkar in externt teckensnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidhuvud -->
+    <header>
+        <!-- Logotyp -->
+        <a href="index.html" id="logo">
+            <img src="images/logo.svg" alt="Logotyp" width="400" height="66">
+        </a>
+        <!-- Knapp för att öppna och stänga hamburgermeny -->
+        <button class="menu-btn" id="open-menu" onclick="openOrCloseMenu()">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
+        <!-- Navigering -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="creations.html">Kreationer</a></li>
+                <li><a href="about.html">Om webbplatsen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Huvudinnehåll på sidan -->
+    <main class="content">
+        <!-- Brödsmula tillbaka till sidan Kreationer -->
+        <h1><a href="creations.html">Kreationer</a> / Mössor</h1>
+        <div class="grid-container-specific-creation">
+            <!-- Slideshow med olika filformat-->
+            <div class="container">
+                <picture class="mySlides">
+                    <source type="image/avif" srcset="images/hats/hatpink500.avif" width="500" height="500">
+                    <source type="image/webp" srcset="images/hats/hatpink500.webp" width="500" height="500">
+                    <img src="images/hats/hatpink500.jpg" alt="Rosa mössa">
+                </picture>
+                <picture class="mySlides">
+                    <source type="image/webp" srcset="images/hats/hatblue500.webp" width="500" height="500">
+                    <img src="images/hats/hatblue500.jpg" alt="Blå mössa">
+                </picture>
+                <picture class="mySlides">
+                    <source type="image/webp" srcset="images/hats/hatbrown500.webp" width="500" height="500">
+                    <img src="images/hats/hatbrown500.jpg" alt="Brun mössa med rosa blommor på">
+                </picture>
+                <picture class="mySlides">
+                    <source type="image/webp" srcset="images/hats/hatgreen500.webp" width="500" height="500">
+                    <img src="images/hats/hatgreen500.jpg" alt="Grönmönstrad mössa">
+                </picture>
+                <!-- Små bildikoner med olika filformat-->
+                <div class="row">
+                    <picture class="column">
+                        <source type="image/webp" srcset="images/hats/hatpink100.webp" width="100" height="100">
+                        <img class="demo cursor" src="images/hats/hatpink100.jpg" onclick="currentSlide(1)"
+                            alt="Rosa mössa">
+                    </picture>
+                    <picture class="column">
+                        <source type="image/webp" srcset="images/hats/hatblue100.webp" width="100" height="100">
+                        <img class="demo cursor" src="images/hats/hatblue100.jpg" onclick="currentSlide(2)"
+                            alt="Blå mössa">
+                    </picture>
+                    <picture class="column">
+                        <source type="image/webp" srcset="images/hats/hatbrown100.webp" width="100" height="100">
+                        <img class="demo cursor" src="images/hats/hatbrown100.jpg" onclick="currentSlide(3)"
+                            alt="Brun mössa med rosa blommor på">
+                    </picture>
+                    <picture class="column">
+                        <source type="image/webp" srcset="images/hats/hatgreen100.webp" width="100" height="100">
+                        <img class="demo cursor" src="images/hats/hatgreen100.jpg" onclick="currentSlide(4)"
+                            alt="Grönmönstrad mössa">
+                    </picture>
+                </div>
+            </div>
+            <div id="specific-creation-text">
+                <p class="text-right" id="specific-creation-first-p" style="clear: left;">Det är roligt att sy mössor!</p>
+                <p class="text-right">Mössor är ofta ett upp&shy;skattat klädes&shy;plagg att få och när barn&shy;barnen själva får välja
+                    vilket tyg mössan
+                    ska skapas i, blir det extra upp&shy;skattat. </p>
+                <p class="text-right">Mönstret som jag använder för att skapa mössor har jag ritat själv. För det mesta syr jag mössor av
+                    bomulls&shy;trikå, men det händer också att jag fodrar mössorna med fleece&shy;tyg om de behöver
+                    vara
+                    extra varma.
+                </p>
+            </div>
+        </div>
+        <div id="videopadding">
+            <div class="hatvideo">
+                <iframe src="https://www.youtube.com/embed/w3Q43dskj_k" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <!-- Sidfot -->
+    <footer>
+        <ul>
+            <li>Copyright &copy; 2023 Petra Ingemarsson</li>
+        </ul>
+    </footer>
+    <!-- Länkar in jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Länkar in main.js -->
+    <script src="main.js"></script>
+    <!-- Länkar in slideshow.js -->
+    <script src="slideshow.js"></script>
+</body>
+
+</html>

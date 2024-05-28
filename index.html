@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <!-- Länkar in style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Länkar in externt teckensnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Länkar in Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/close.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/loading.gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/next.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/prev.png">
+</head>
+
+<body>
+    <!-- Sidhuvud -->
+    <header>
+        <!-- Logotyp -->
+        <a href="index.html" id="logo">
+            <img src="images/logo.svg" alt="Logotyp" width="400" height="66">
+        </a>
+        <!-- Knapp för att öppna och stänga hamburgermeny -->
+        <button class="menu-btn" id="open-menu" onclick="openOrCloseMenu()">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+        </button>
+        <!-- Navigering -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="creations.html">Kreationer</a></li>
+                <li><a href="about.html">Om webbplatsen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Infogar videobakgrunden och lägger till en poster -->
+    <video width="1920" height="1080" id="background-video" autoplay loop muted poster="images/symaskin.jpg">
+        <source src="video/symaskin.mp4" type="video/mp4">
+    </video>
+    <!-- Huvudinnehåll på sidan -->
+    <main>
+        <div id="presentation">
+            <p id="first-p">Handmade with love är webb&shy;platsen för dig som tycker om att sy.</p>
+            <p class="next-p">Genom att visa en del av alla de kreationer som jag har skapat till mina fem barn&shy;barn
+                i åldrarna sex månader till nio år, hoppas jag att du ska få idéer och inspiration till att slå dig ner
+                vid din egen symaskin.</p>
+            <p class="next-p">Välkommen att låta dig inspireras av kärleks&shy;fulla hant&shy;verk skapade av en
+                hobby&shy;sömmerska!</p>
+        </div>
+        <!-- Senaste kreationerna i olika filformat och storlekar -->
+        <section>
+            <h2>Senaste kreationerna</h2>
+            <div class="grid-container">
+                <!-- Länk med attribut för Lightbox -->
+                <a href="images/set/set700.jpg" data-lightbox="image-1" data-title="3-delat set">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1024px)" srcset="images/set/set250.webp" width="250" height="250">
+                        <source type="image/jpg" media="(min-width: 1024px)" srcset="images/set/set250.jpg" width="250" height="250">
+                        <source type="image/webp" media="(min-width: 601px) and (max-width: 1023px)"
+                            srcset="images/set/set500.webp" width="500" height="500">
+                        <source type="image/jpg" media="(min-width: 601px) and (max-width: 1023px)"
+                            srcset="images/set/set500.jpg" width="500" height="500">
+                        <source type="image/webp" media="(max-width: 600px)" srcset="images/set/set250.webp" width="250" height="250">
+                        <source type="image/jpg" media="(max-width: 600px)" srcset="images/set/set250.jpg" width="250" height="250">
+                        <img src="images/set/set500.jpg" alt="3-delat set med mössa, filt och vantar"
+                            class="latest-creations">
+                    </picture>
+                </a>
+                <!-- Länk med attribut för Lightbox -->
+                <a href="images/dress/dress700.jpg" data-lightbox="image-1" data-title="Klänning">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1024px)" srcset="images/dress/dress250.webp" width="250" height="250">
+                        <source type="image/jpg" media="(min-width: 1024px)" srcset="images/dress/dress250.jpg" width="250" height="250">
+                        <source type="image/webp" media="(min-width: 601px) and (max-width: 1023px)"
+                            srcset="images/dress/dress500.webp" width="500" height="500">
+                        <source type="image/jpg" media="(min-width: 601px) and (max-width: 1023px)"
+                            srcset="images/dress/dress500.jpg" width="500" height="500">
+                        <source type="image/webp" media="(max-width: 600px)" srcset="images/dress/dress250.webp" width="250" height="250">
+                        <source type="image/jpg" media="(max-width: 600px)" srcset="images/dress/dress250.jpg" width="250" height="250">
+                        <img src="images/dress/dress500.jpg" alt="Klänning med enhörningar på" class="latest-creations">
+                    </picture>
+                </a>
+                <!-- Länk med attribut för Lightbox -->
+                <a href="images/panties/panties700.jpg" data-lightbox="image-1" data-title="Trosor">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1024px)" srcset="images/panties/panties250.webp" width="250" height="250">
+                        <source type="image/jpg" media="(min-width: 1024px)" srcset="images/panties/panties250.jpg" width="250" height="250">
+                        <source type="image/webp" media="(min-width: 601px) and (max-width: 1023px)"
+                            srcset="images/panties/panties500.webp" width="500" height="500">
+                        <source type="image/jpg" media="(min-width: 601px) and (max-width: 1023px)"
+                            srcset="images/panties/panties500.jpg" width="500" height="500">
+                        <source type="image/webp" media="(max-width: 600px)" srcset="images/panties/panties250.webp" width="250" height="250">
+                        <source type="image/jpg" media="(max-width: 600px)" srcset="images/panties/panties250.jpg" width="250" height="250">
+                        <img src="images/panties/panties500.jpg" alt="Trosor i olika färger" class="latest-creations">
+                    </picture>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Sidfot -->
+    <footer>
+        <ul>
+            <li>Copyright &copy; 2023 Petra Ingemarsson</li>
+        </ul>
+    </footer>
+    <!-- Länkar in jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Länkar in Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.js"
+        integrity="sha512-UHlZzRsMRK/ENyZqAJSmp/EwG8K/1X/SzErVgPc0c9pFyhUwUQmoKeEvv9X0uNw8x46FxgIJqlD2opSoH5fjug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Länkar in lightbox.js -->
+    <script src="lightbox.js"></script>
+    <!-- Länkar in main.js -->
+    <script src="main.js"></script>
+</body>
+
+</html>

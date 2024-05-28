@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om webbplatsen</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <!-- Länkar in style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Länkar in externt teckensnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Sidhuvud -->
+            <header>
+                <!-- Logotyp -->
+                <a href="index.html" id="logo">
+                    <img src="images/logo.svg" alt="Logotyp" width="400" height="66">
+                </a>
+                <!-- Knapp för att öppna och stänga hamburgermeny -->
+                <button class="menu-btn" id="open-menu" onclick="openOrCloseMenu()">
+                    <span class="menu-icon">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </span>
+                </button>
+                <!-- Navigering -->
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Startsida</a></li>
+                        <li><a href="creations.html">Kreationer</a></li>
+                        <li><a href="about.html">Om webbplatsen</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Huvudinnehåll på sidan -->
+            <main class="content">
+                <article>
+                    <h1>Om webbplatsen</h1>
+                    <div class="grid-container-about">
+                        <div>
+
+                            <p>Denna webbplats är uppbyggd som en presentation av sådant jag har skapat som
+                                hobby&shy;sömmerska. Jag heter Anette Johnsson och de kreat&shy;ioner jag visar upp är
+                                ett urval av allt det jag har sytt.</p>
+                            <p>Webbplatsen är skapad av min dotter Petra Ingemars&shy;son som en projekt&shy;uppgift för en
+                                kurs hon har läst inom ramen för sin utbildning till webb&shy;utvecklare. Målet med
+                                upp&shy;giften var att hon skulle tillämpa de kunskaper hon lärde sig gällande grafisk
+                                teknik för webb i en riktig webb&shy;plats.</p>
+                            <p>Handmade with love är det märke jag på senare år har börjat fästa på de kreationer jag
+                                skapar. Av den anled&shy;ningen har denna webb&shy;plats fått samma namn som märket.</p>
+                            <p>Jag hoppas att du känner dig inspirerad till att börja sy eller till att sy ännu mer!
+                                Kontakta mig gärna via <a href="mailto:someone@example.com">e-post</a> om du vill utbyta
+                                erfarenheter.</p>
+                        </div>
+                        <div>
+                            <picture>
+                                <source type="image/webp" media="(min-width: 1024px)"
+                                    srcset="images/snake/snakegif.webp" width="300" height="606">
+                                <source type="image/gif" media="(min-width: 1024px)" srcset="images/snake/snakegif.gif"
+                                    width="300" height="606">
+                                <source type="image/webp" media="(min-width: 601px) and (max-width: 1023px)"
+                                    srcset="images/snake/snakeround500.webp" width="500" height="500">
+                                <source type="image/jpg" media="(min-width: 601px) and (max-width: 1023px)"
+                                    srcset="images/snake/snakeround500.jpg" width="500" height="500">
+                                <source type="image/webp" media="(max-width: 600px)"
+                                    srcset="images/snake/snakeround250.webp" width="250" height="250">
+                                <source type="image/jpg" media="(max-width: 600px)"
+                                    srcset="images/snake/snakeround250.jpg" width="250" height="250">
+                                <img src="images/snake/snakeround500.jpg" alt="Multifärgad mjukisorm" id="snake">
+                            </picture>
+                        </div>
+                    </div>
+                    <section id="about-petra">
+                        <h2>Om webbutvecklaren</h2>
+                        <p>Petra Ingemarsson studerar programmet Webb&shy;utveckling 120 hp vid Mitt&shy;universitetet i
+                            Sunds&shy;vall. En längtan efter att få skapa, designa och utveckla drev henne till att
+                            på&shy;börja sina studier höst&shy;terminen 2022. Petra Ingemarsson kan kontaktas via:</p>
+                        <ul>
+                            <li><img src="images/phone.svg" alt="Telefonlursikon" class="icons">070-245 88 78</li>
+                            <li><img src="images/letter.svg" alt="Brevikon" class="icons"><a
+                                    href="mailto:petra.ingemarsson@gmail.com">e-post</a></li>
+                        </ul>
+                    </section>
+                </article>
+            </main>
+        </div>
+        <!-- Sidfot -->
+        <footer id="footer">
+            <ul>
+                <li>Copyright &copy; 2023 Petra Ingemarsson</li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Länkar in jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Länkar in main.js -->
+    <script src="main.js"></script>
+</body>
+
+</html>

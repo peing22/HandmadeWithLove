@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreationer</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <!-- Länkar in style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- Länkar in externt teckensnitt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Sidhuvud -->
+            <header>
+                <!-- Logotyp -->
+                <a href="index.html" id="logo">
+                    <img src="images/logo.svg" alt="Logotyp" width="400" height="66">
+                </a>
+                <!-- Knapp för att öppna och stänga hamburgermeny -->
+                <button class="menu-btn" id="open-menu" onclick="openOrCloseMenu()">
+                    <span class="menu-icon">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </span>
+                </button>
+                <!-- Navigering -->
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Startsida</a></li>
+                        <li><a href="creations.html">Kreationer</a></li>
+                        <li><a href="about.html">Om webbplatsen</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Huvudinnehåll på sidan -->
+            <main class="content">
+                <section class="textcontent">
+                    <h1>Kreationer</h1>
+                    <p>Klicka på respektive bild för mer information om kreationerna.</p>
+                </section>
+                <!-- Olika filformat på bilder -->
+                <div class="grid-container-creations">
+                    <a href="hats.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/hats/hatpink250.webp" width="250" height="250">
+                                <img src="images/hats/hatpink250.jpg" alt="Rosa mössa" class="creations">
+                            </picture>
+                            <figcaption id="pink">Mössor</figcaption>
+                        </figure>
+                    </a>
+                    <a href="onepiece.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/onepiece/onepiece250.webp" width="250" height="250">
+                                <img src="images/onepiece/onepiece250.jpg" alt="Turkosblå onepiece" class="creations">
+                            </picture>
+                            <figcaption id="turquoise">Onepiece</figcaption>
+                        </figure>
+                    </a>
+                    <a href="trousers.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/trousers/trousersmulti250.webp" width="250" height="250">
+                                <img src="images/trousers/trousersmulti250.jpg" alt="Byxor med djungeldjur på"
+                                    class="creations">
+                            </picture>
+                            <figcaption id="yellow">Byxor</figcaption>
+                        </figure>
+                    </a>
+                    <a href="shirt.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/shirt/shirt250.webp" width="250" height="250">
+                                <img src="images/shirt/shirt250.jpg" alt="Multifärgad T-shirt" class="creations">
+                            </picture>
+                            <figcaption id="green">T-shirt</figcaption>
+                        </figure>
+                    </a>
+                    <a href="briefs.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/briefs/briefs250.webp" width="250" height="250">
+                                <img src="images/briefs/briefs250.jpg" alt="Kalsonger med zebramönster"
+                                    class="creations">
+                            </picture>
+                            <figcaption id="grey">Kalsonger</figcaption>
+                        </figure>
+                    </a>
+                    <a href="panties.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/panties/panties250.webp" width="250" height="250">
+                                <img src="images/panties/panties250.jpg" alt="Trosor i olika färger" class="creations">
+                            </picture>
+                            <figcaption id="orange">Trosor</figcaption>
+                        </figure>
+                    </a>
+                    <a href="dress.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/dress/dress250.webp" width="250" height="250">
+                                <img src="images/dress/dress250.jpg" alt="Klänning med enhörningar på"
+                                    class="creations">
+                            </picture>
+                            <figcaption id="purple">Klänning</figcaption>
+                        </figure>
+                    </a>
+                    <a href="set.html">
+                        <figure>
+                            <picture>
+                                <source type="image/webp" srcset="images/set/set250.webp" width="250" height="250">
+                                <img src="images/set/set250.jpg" alt="3-delat set med mössa, filt och vantar"
+                                    class="creations">
+                            </picture>
+                            <figcaption id="lightgrey">3-delat set</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </main>
+        </div>
+        <!-- Sidfot -->
+        <footer id="footer">
+            <ul>
+                <li>Copyright &copy; 2023 Petra Ingemarsson</li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Länkar in jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Länkar in main.js -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
